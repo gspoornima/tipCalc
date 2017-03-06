@@ -1,2 +1,3 @@
 # tipCalc
-Version 0
+# TODO: Add text here
+
