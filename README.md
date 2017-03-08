@@ -1,4 +1,4 @@
-# Pre-work - *TipCalc*
+# Pre-work - *TipCalc	*
 
 **TipCalc** is a tip calculator application for iOS.
 
@@ -27,7 +27,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+![Video Walkthrough](TipCalc_animation.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
