@@ -15,9 +15,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var lblTotal: UILabel!
     @IBOutlet weak var tipControl: UISegmentedControl!
     
+    let numberFormatter = NumberFormatter()
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        numberFormatter.numberStyle = .currency
         txtBill.becomeFirstResponder()
     }
     
@@ -25,6 +27,7 @@ class ViewController: UIViewController {
         let defaults = UserDefaults.standard
         let defaultTipIndex = defaults.integer(forKey: "default_tip_index")
         tipControl.selectedSegmentIndex = defaultTipIndex
+        calculateTip(tipControl)
     }
 
     override func didReceiveMemoryWarning() {
@@ -42,9 +45,9 @@ class ViewController: UIViewController {
         let bill = Double(txtBill.text!) ?? 0
         let tip = bill * tipPercentages[tipControl.selectedSegmentIndex]
         let total = bill + tip
-        
-        lblTip.text = String(format: "$%.2f", tip)
-        lblTotal.text = String(format: "$%.2f", total)
+
+        lblTip.text = numberFormatter.string(from: NSNumber(floatLiteral: tip))
+        lblTotal.text = numberFormatter.string(from: NSNumber(floatLiteral: total))
     }
    
 }
