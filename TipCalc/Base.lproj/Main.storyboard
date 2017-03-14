@@ -87,7 +87,7 @@
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Tip Calculator" id="S1l-9j-bLx">
-                        <barButtonItem key="rightBarButtonItem" title="Settings" id="GZP-5h-L0z">
+                        <barButtonItem key="rightBarButtonItem" image="SettingsIcon" id="GZP-5h-L0z">
                             <connections>
                                 <segue destination="HWi-vz-SjU" kind="push" id="efm-EB-XaE"/>
                             </connections>
@@ -167,6 +167,9 @@
             <point key="canvasLocation" x="-49.5" y="152.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="SettingsIcon" width="29" height="29"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
